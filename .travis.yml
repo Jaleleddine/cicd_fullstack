@@ -2,6 +2,6 @@ sudo: required
 services: 
     - docker 
 scripts: 
-    -docker build -t jalil/node2 .
-    -docker images jalil/node2 
+    -docker build -t node2 .
+    -docker images node2 
     
