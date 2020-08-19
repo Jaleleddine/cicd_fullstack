@@ -3,13 +3,13 @@ services:
     - docker
 
 script:
-    - docker build -t hajlaoui/node2 .
-    - docker images hajlaoui/node2
+    - docker build -t imagenodejs .
+    - docker images imagenodejs
 before_deploy:
   - docker login -u hajlaoui -p Hajlaoui2019@
 deploy: 
   provider: script 
-  script: docker push hajlaoui/node2:v10
+  script: docker push hajlaoui/imagenodejs:v10
   on:
     branch: master 
     
