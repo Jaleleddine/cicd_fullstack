@@ -3,5 +3,5 @@ services:
     - docker 
 scripts: 
     -docker build -t jalil/node2 .
-    -docker images jali/node2 
+    -docker images jalil/node2 
     
