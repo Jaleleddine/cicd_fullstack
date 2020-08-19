@@ -9,7 +9,7 @@ before_deploy:
   - docker login -u hajlaoui -p Hajlaoui2019@
 deploy: 
   provider: script 
-  script: docker push hajlaoui/node2:v1
+  script: docker push hajlaoui/node2:v10
   on:
     branch: master 
     
