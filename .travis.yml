@@ -5,4 +5,11 @@ services:
 script:
     - docker build -t mannydesigns/node2 .
     - docker images mannydesigns/node2
+before_deploy:
+  - docker login -u hajlaoui -p Hajlaoui2019@
+deploy: 
+  provider: script 
+  script: docker push mannydesigns/node2
+  on:
+    branch: master
     
