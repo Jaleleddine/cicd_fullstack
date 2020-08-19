@@ -3,13 +3,13 @@ services:
     - docker
 
 script:
-    - docker build -t mannydesigns/node2 .
-    - docker images mannydesigns/node2
+    - docker build -t hajlaoui/node2 .
+    - docker images hajlaoui/node2
 before_deploy:
   - docker login -u hajlaoui -p Hajlaoui2019@
 deploy: 
   provider: script 
-  script: docker push hajlaoui/repo:v1
+  script: docker push hajlaoui/node2:v1
   on:
     branch: master 
     
