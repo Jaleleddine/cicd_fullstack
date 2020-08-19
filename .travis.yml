@@ -3,8 +3,8 @@ services:
     - docker
 
 script:
-    - docker build -t mannydesigns/node2 .
-    - docker images mannydesigns/node2
+    - docker build -t Jaleleddine/cicd_fullstack .
+    - docker images Jaleleddine/cicd_fullstack
 before_deploy:
   - docker login -u hajlaoui -p Hajlaoui2019@
 deploy: 
