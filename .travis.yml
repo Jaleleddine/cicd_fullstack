@@ -1,7 +1,8 @@
 sudo: required
-services: 
-    - docker 
-scripts: 
-    -docker build -t node2 .
-    -docker images node2 
+services:
+    - docker
+
+script:
+    - docker build -t mannydesigns/node2 .
+    - docker images mannydesigns/node2
     
