@@ -11,5 +11,5 @@ deploy:
   provider: script 
   script: docker push hajlaoui/imagenodejs:v10
   on:
-    branch: master 
+    branch: master   
     
